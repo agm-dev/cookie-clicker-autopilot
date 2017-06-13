@@ -1,6 +1,7 @@
 function clickForTheWin(){
 	Game.ClickCookie();
     Game.shimmers.map(s => { s.pop() })
+	Game.CollectWrinklers();
 }
 
 function lookingForTheBestChoice(){
