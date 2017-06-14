@@ -37,7 +37,8 @@ function smartAutoPilot(){
 		for ( var i = 0; i < Game.UpgradesInStore.length; i++ ){
 			if (	Game.cookies > Game.UpgradesInStore[i].getPrice() &&
 					Game.UpgradesInStore[i].name != Game.Upgrades["Elder Pledge"].name &&
-					Game.UpgradesInStore[i].name != Game.Upgrades["Elder Covenant"].name ) {
+					Game.UpgradesInStore[i].name != Game.Upgrades["Elder Covenant"].name &&
+					Game.UpgradesInStore[i].name != Game.Upgrades["Revoke Elder Covenant"].name ) {
 				Game.UpgradesInStore[i].buy();
 				break;
 			}
